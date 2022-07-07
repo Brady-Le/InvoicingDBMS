@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pageExample.ManagementView">
+    <TabPane fx:id="TabChoice" prefHeight="300.0" prefWidth="560.0">
+        <tabs>
+            <Tab fx:id="tab1" closable="false" text="customer" onSelectionChanged="#ChoiceTab1">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                   <TableView fx:id="SaleCustomer" prefHeight="268.0" prefWidth="560.0">
+                       <columns>
+                           <TableColumn fx:id="SaleID" text="用户名" />
+                           <TableColumn fx:id="SaleUserName" text="密码" />
+                           <TableColumn fx:id="SalePassWord" text="权限" />
+                       </columns>
+                   </TableView>
+               </children></AnchorPane>
+            </Tab>
+            <Tab fx:id="tab2" closable="false" text="supplier" onSelectionChanged="#ChoiceTab2">
+                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <TableView fx:id="PurchaseCustomer" prefHeight="268.0" prefWidth="560.0">
+                            <columns>
+                                <TableColumn fx:id="PurchaseID" text="用户名" />
+                                <TableColumn fx:id="PurchaseUserName" text="密码" />
+                                <TableColumn fx:id="PurchasePassWord" text="权限" />
+                            </columns>
+                        </TableView>
+                    </children></AnchorPane>
+            </Tab>
+            <Tab fx:id="tab3" closable="false" text="root" onSelectionChanged="#ChoiceTab3">
+                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <TableView fx:id="Customer" prefHeight="268.0" prefWidth="560.0">
+                            <columns>
+                                <TableColumn fx:id="CustomerID" text="用户名" />
+                                <TableColumn fx:id="CustomerUserName" text="密码" />
+                                <TableColumn fx:id="CustomerPassWord" text="权限" />
+                            </columns>
+                        </TableView>
+                    </children></AnchorPane>
+            </Tab>
+        </tabs>
+    </TabPane>
+   <HBox alignment="BOTTOM_CENTER" prefHeight="40.0" prefWidth="560.0">
+      <children>
+          <Button fx:id="account_add" contentDisplay="CENTER" mnemonicParsing="false" onAction="#AddAccount" prefHeight="20.0" prefWidth="149.0" text="添加账号">
+              <opaqueInsets>
+                  <Insets />
+              </opaqueInsets>
+              <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+              </HBox.margin></Button>
+          <Button fx:id="account_update" contentDisplay="CENTER" mnemonicParsing="false" onAction="#AccountUpdate" prefHeight="20.0" prefWidth="149.0" text="修改账户">
+              <opaqueInsets>
+                  <Insets />
+              </opaqueInsets>
+              <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+              </HBox.margin></Button>
+          <Button fx:id="previous" contentDisplay="CENTER" mnemonicParsing="false" onAction="#PreviousButtonClick" prefHeight="20.0" prefWidth="149.0" text="返回">
+              <opaqueInsets>
+                  <Insets />
+              </opaqueInsets>1
+              <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+              </HBox.margin></Button>
+      </children>
+
+   </HBox>
+    <Label fx:id="AddDBMessage" alignment="CENTER" prefHeight="15.0" prefWidth="150.0" textFill="RED">
+        <VBox.margin>
+            <Insets />
+        </VBox.margin></Label>
+    <Label fx:id="AddMessage" alignment="CENTER" prefHeight="15.0" prefWidth="150.0" textFill="RED">
+        <VBox.margin>
+            <Insets />
+        </VBox.margin></Label>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>

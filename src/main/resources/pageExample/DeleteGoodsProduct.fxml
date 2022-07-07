@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="pageExample.DeleteGoodsProduct"
+            prefHeight="160.0" prefWidth="500.0">
+
+    <VBox prefHeight="160.0" prefWidth="500.0">
+        <VBox>
+            <HBox prefWidth="291.0">
+                <HBox>
+                    <Label text="商品编号">
+                        <HBox.margin>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </HBox.margin></Label>
+                    <TextField fx:id="GoodsId" prefHeight="0.0" prefWidth="50" />
+                </HBox>
+                <Label fx:id="GoodsIdError" prefHeight="15.0" prefWidth="100.0" textFill="RED" />
+                <VBox.margin>
+                    <Insets top="10.0" />
+                </VBox.margin>
+            </HBox>
+        </VBox>
+        <VBox>
+            <HBox/>
+        </VBox>
+        <HBox prefWidth="368.0">
+            <Button fx:id="product_save" alignment="CENTER" onAction="#productSaveBack" prefHeight="23.0" prefWidth="149.0" text="保存修改">
+                <HBox.margin>
+                    <Insets bottom="10.0" left="150.0" right="10.0" top="10.0" />
+                </HBox.margin></Button>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </HBox>
+        <Label fx:id="AddDBMessage" alignment="CENTER" prefHeight="15.0" prefWidth="150.0" textFill="RED">
+            <VBox.margin>
+                <Insets left="150.0" />
+            </VBox.margin></Label>
+        <Label fx:id="AddMessage" alignment="CENTER" prefHeight="15.0" prefWidth="150.0" textFill="RED">
+            <VBox.margin>
+                <Insets left="150.0" />
+            </VBox.margin></Label>
+    </VBox>
+
+</AnchorPane>

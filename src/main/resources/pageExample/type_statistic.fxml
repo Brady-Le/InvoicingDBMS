@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pageExample.TypeStatistic">
+    <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0">
+      <HBox alignment="CENTER" prefHeight="167.0" prefWidth="600.0" spacing="20.0">
+         <children>
+            <Label text="输入您想要搜索的商品类别" />
+            <TextField fx:id="typeField" prefHeight="23.0" prefWidth="61.0">
+               <opaqueInsets>
+                  <Insets left="20.0" />
+               </opaqueInsets>
+            </TextField>
+            <Button fx:id="typeSearch" mnemonicParsing="false" onAction="#typeSearch" text="查询" />
+            <Button fx:id="typeSearchBack" mnemonicParsing="false" onAction="#typeSearchBack" text="返回" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </HBox>
+        <VBox>
+            <Label fx:id="typeError" prefHeight="15.0" prefWidth="250.0" textFill="RED">
+            <VBox.margin>
+               <Insets left="150.0" />
+            </VBox.margin></Label>
+        </VBox>
+        <TableView fx:id="Goods" prefHeight="451.0" prefWidth="600.0">
+            <TableColumn fx:id="GoodsID" text="商品编号" />
+            <TableColumn fx:id="GoodsName" text="商品名称" />
+            <TableColumn fx:id="GoodsSalePrice" prefWidth="100.0" text="售价" />
+            <TableColumn fx:id="GoodsPurchasePrice" prefWidth="100.0" text="进货价" />
+            <TableColumn fx:id="GoodsCount" prefWidth="100.0" text="库存数量" />
+            <TableColumn fx:id="GoodsType" prefWidth="100.0" text="类型" />
+        </TableView>
+    </VBox>
+</AnchorPane>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pageExample.AccountAdd">
+    <VBox prefHeight="200.0" prefWidth="300.0">
+        <VBox>
+            <HBox>
+                <HBox prefHeight="23.0" prefWidth="281.0">
+                    <Label text="用户名">
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin>
+                  <padding>
+                     <Insets right="10.0" />
+                  </padding></Label>
+                    <TextField fx:id="UserName" prefHeight="0.0" prefWidth="50" />
+                    <Label fx:id="UserNameError" prefHeight="15.0" prefWidth="168.0" textFill="RED" />
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </HBox.margin>
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </HBox.margin>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox>
+
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+
+            </HBox>
+        </VBox>
+        <VBox prefHeight="45.0" prefWidth="227.0">
+            <HBox>
+                <HBox prefHeight="23.0" prefWidth="202.0">
+                    <Label text="密码">
+                        <padding>
+                            <Insets right="10.0" />
+                        </padding></Label>
+                    <TextField fx:id="Password" prefHeight="23.0" prefWidth="151.0" />
+                    <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" top="10.0" />
+                    </HBox.margin>
+                </HBox>
+
+                <VBox.margin>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </VBox.margin>
+            </HBox>
+            <Label fx:id="PasswordError" alignment="CENTER" prefHeight="15.0" prefWidth="180.0" textFill="RED">
+                <padding>
+                    <Insets right="10.0" />
+                </padding>
+            <VBox.margin>
+               <Insets bottom="10.0" left="50.0" />
+            </VBox.margin></Label>
+
+            <HBox>
+                <HBox>
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+
+            </HBox>
+        </VBox>
+
+        <HBox prefHeight="36.0" prefWidth="300.0">
+            <Button fx:id="account_save" contentDisplay="CENTER" mnemonicParsing="false" onAction="#AccountSave" prefHeight="20.0" prefWidth="149.0" text="保存修改">
+                <opaqueInsets>
+                    <Insets />
+                </opaqueInsets>
+                <HBox.margin>
+                    <Insets bottom="10.0" left="60.0" right="10.0" top="10.0" />
+                </HBox.margin></Button>
+            <!--            <Button fx:id="account_save" contentDisplay="CENTER" onAction="#AccountSave" text="保存修改">-->
+            <!--                <HBox.margin>-->
+            <!--                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />-->
+            <!--                </HBox.margin></Button>-->
+        </HBox>
+        <Label fx:id="AddDBMessage" alignment="CENTER" prefHeight="15.0" prefWidth="150.0" textFill="RED">
+            <VBox.margin>
+                <Insets left="60.0" />
+            </VBox.margin></Label>
+        <Label fx:id="AddMessage" alignment="CENTER" prefHeight="15.0" prefWidth="150.0" textFill="RED">
+            <VBox.margin>
+                <Insets left="60.0" />
+            </VBox.margin></Label>
+    </VBox>
+</AnchorPane>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="230.0" prefWidth="300.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pageExample.AccountUpdate">
+    <VBox prefHeight="230.0" prefWidth="300.0">
+        <VBox>
+            <HBox>
+                <HBox>
+                    <Label text="用户名">
+                        <HBox.margin>
+                            <Insets />
+                        </HBox.margin>
+                        <padding>
+                            <Insets right="10.0" />
+                        </padding></Label>
+                    <TextField fx:id="UserName" prefHeight="0.0" prefWidth="50" />
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </HBox.margin>
+                </HBox>
+                <Label fx:id="UserNameError" alignment="CENTER" prefHeight="15.0" prefWidth="180.0" textFill="RED">
+                    <padding>
+                        <Insets right="10.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets left="50.0" />
+                    </VBox.margin>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin></Label>
+            </HBox>
+         <HBox prefHeight="41.0" prefWidth="300.0">
+            <children>
+                   <HBox>
+                       <Label text="旧密码">
+                           <padding>
+                               <Insets right="10.0" />
+                           </padding>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                       <TextField fx:id="OldPassword" prefHeight="23.0" prefWidth="111.0" />
+                   </HBox>
+                <Label fx:id="OldPasswordError" alignment="CENTER" prefHeight="15.0" prefWidth="120.0" textFill="RED">
+                    <padding>
+                        <Insets right="10.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets left="50.0" />
+                    </VBox.margin>
+                    <HBox.margin>
+                        <Insets top="5.0" />
+                    </HBox.margin></Label>
+            </children>
+         </HBox>
+        </VBox>
+        <VBox prefHeight="45.0" prefWidth="227.0">
+            <HBox>
+                <HBox>
+                    <Label text="新密码">
+                        <padding>
+                            <Insets right="10.0" />
+                        </padding></Label>
+                    <TextField fx:id="NewPassword" prefHeight="23.0" prefWidth="107.0" />
+                    <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" top="10.0" />
+                    </HBox.margin>
+                </HBox>
+                <Label fx:id="NewPasswordError" alignment="CENTER" prefHeight="15.0" prefWidth="100.0" textFill="RED">
+                    <padding>
+                        <Insets right="10.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets left="50.0" />
+                    </VBox.margin>
+                    <HBox.margin>
+                        <Insets top="10.0" />
+                    </HBox.margin></Label>
+                <VBox.margin>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </VBox.margin>
+            </HBox>
+        </VBox>
+        <HBox prefHeight="13.0" prefWidth="206.0">
+            <Button fx:id="account_save" onAction="#AccountSave" text="保存修改">
+                <HBox.margin>
+                    <Insets bottom="10.0" left="100.0" right="10.0" top="10.0" />
+                </HBox.margin></Button>
+        </HBox>
+        <Label fx:id="AddDBMessage" alignment="CENTER" prefHeight="15.0" prefWidth="150.0" textFill="RED">
+            <VBox.margin>
+                <Insets left="60.0" />
+            </VBox.margin></Label>
+        <Label fx:id="AddMessage" alignment="CENTER" prefHeight="15.0" prefWidth="150.0" textFill="RED">
+            <VBox.margin>
+                <Insets left="60.0" />
+            </VBox.margin></Label>
+    </VBox>
+</AnchorPane>
